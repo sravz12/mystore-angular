@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4" *ngFor="let p of products">
+            <div class="card" style="width: 18rem;">
+                <img src="{{p.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{p.title}}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{p.price}}</li>
+                </ul>
+                <div class="card-body">
+                  <a class="card-link" (click)="redirectToProductDetail(p.id)">View More</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+</div>
